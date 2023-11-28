@@ -4,6 +4,6 @@ The inputs for the three models were the images of cropped hand regions of the d
 
 # 1. Random Forest Classifier
 
-Three folders were created to store raw images (_RGB405p2_), hand segmentation images (_Mask_), and text files of detected bounding boxes of hands (_Shan_bbx_).
-After the files and folders are ready, run [FeatureExtraction.py](https://github.com/mft2023/main/blob/Rondom-Forest-Classifier/FeatureExtraction.py) to generate features in _Feature_N10_ShanBBX_.
+Three folders were created to store raw images (_RGB405p2_), hand segmentation images (_Mask_), and text files of detected bounding boxes of hands (_Shan_bbx_).  
+After the files and folders are ready, run [FeatureExtraction.py](https://github.com/mft2023/main/blob/Rondom-Forest-Classifier/FeatureExtraction.py) to generate features in _Feature_N10_ShanBBX_.  
 The weights for hand segmentation using UNET are available based on request.
