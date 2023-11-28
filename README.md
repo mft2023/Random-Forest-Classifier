@@ -3,7 +3,7 @@ This repository stores open-source codes for the publication: [Recognizing hand 
 In the publication, three machine learning models, including a random forest classifier, SlowFast network, and Hand Object Detector, were trained to identify hand-object interaction in daily living for stroke survivors.
 The inputs for the three models were the images of cropped hand regions of the detected hand bounding boxes using [Hand Object Detector](https://github.com/ddshan/hand_object_detector). 
 
-#1. Random Forest Classifier
+# 1. Random Forest Classifier
 
 Three folders were created to store raw images (_RGB405p2_), hand segmentation images (_Mask_), and text files of detected bounding boxes of hands (_Shan_bbx_).
 The generated features will be saved in a folder named: _Feature_N10_ShanBBX_.
