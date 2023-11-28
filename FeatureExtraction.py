@@ -224,7 +224,7 @@ def CalFea(framename,RGBfolder,Maskfolder,BBXfolder):
     return Frame_OPT_full,Frame_OPT_crop_HOG_full_mean_std_HSV_hand_nonhand_bg_HandSize_GlobLoc_nonhand_BG_BBX
 #############################################################
     
-folder_Path='//idapt_shares/NET/Stroke Hand Use/DO NOT BACK UP/Hand Labeling_Home/pipeline/';
+folder_Path='//'; # absolute directory of the folder contains folders of  RGB405p2, Mask, and Shan_bbx.
 folder_list=os.listdir(folder_Path);
 folder_list.sort(key=natural_keys);
 N=10;
