@@ -30,11 +30,11 @@ def natural_keys(text):
     return [ atoi(c) for c in re.split('(\d+)', text) ]
 
 target_list='{path to the folder with all tasks to segment}/pipeline/';
-save_ModelPath='{path to the model}/model-UNET-epoch100-stroke.h5';
+ModelPath='{path to the model}/model-UNET-epoch100-stroke.h5';
 im_resize=[320,320]; #image size
 
 #Load the model
-model = load_model(save_ModelPath, custom_objects={'binary_crossentropy_plus_jaccard_loss':sm.losses.bce_jaccard_loss,'iou_score':sm.metrics.iou_score});#import the loss function from segmentation model
+model = load_model(ModelPath, custom_objects={'binary_crossentropy_plus_jaccard_loss':sm.losses.bce_jaccard_loss,'iou_score':sm.metrics.iou_score});#import the loss function from segmentation model
 print(model.summary()) 
 
 #load the images to test

@@ -224,7 +224,7 @@ def CalFea(framename,RGBfolder,Maskfolder,BBXfolder):
     return Frame_OPT_full,Frame_OPT_crop_HOG_full_mean_std_HSV_hand_nonhand_bg_HandSize_GlobLoc_nonhand_BG_BBX
 #############################################################
     
-folder_Path='//'; # absolute directory of the folder contains folders of  RGB405p2, Mask, and Shan_bbx.
+folder_Path='{path to the pipeline folder}'; # absolute directory of the folder contains folders of  RGB405p2, Mask, and Shan_bbx.
 folder_list=os.listdir(folder_Path);
 folder_list.sort(key=natural_keys);
 N=10;
@@ -233,7 +233,7 @@ for k in range(0,len(folder_list)):
     print(folder_list[k])
     RGBfolder=folder_Path+folder_list[k]+'/RGB405p2/';
     Maskfolder=folder_Path+folder_list[k]+'/Mask/';
-    BBXfolder=folder_Path+folder_list[k]+'/bbx/';
+    BBXfolder=folder_Path+folder_list[k]+'/Shan_bbx/';
     
     if os.path.exists(BBXfolder):
         saveFeatPath=folder_Path+folder_list[k]+'/Features/';

@@ -141,7 +141,7 @@ def Orgniza_Data(GT_labeling_Folder,Pipeline_Folder,folder_name,target_list,PCA_
                         Vset=key[6:8];
                         frame=int(key[10:16]);
                         B=FeatureVectorStack[i].get(key);#features for each hand
-                        with open(Pipeline_Folder+'/'+subfolders[k]+'/bbx/'+key+'.txt', 'r') as b:
+                        with open(Pipeline_Folder+'/'+subfolders[k]+'/Shan_bbx/'+key+'.txt', 'r') as b:
                             listBox = [line.strip() for line in b]
                             heading_len=0;loc=[]
                             for j in range(0,len(listBox)):

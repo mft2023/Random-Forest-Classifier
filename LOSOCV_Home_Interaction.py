@@ -122,7 +122,7 @@ def Orgniza_Data(GT_labeling_Folder,Pipeline_Folder,folder_name,target_list,PCA_
                     frame=int(key[10:16]);
                     B=FeatureVectorStack[i].get(key);# feature vector in each frame
                     
-                    with open(Pipeline_Folder+'/'+subfolders[k]+'/bbx/'+key+'.txt', 'r') as b:
+                    with open(Pipeline_Folder+'/'+subfolders[k]+'/Shan_bbx/'+key+'.txt', 'r') as b:
                         listBox = [line.strip() for line in b]
                         heading_len=0;loc=[]
                         for j in range(0,len(listBox)):
@@ -301,12 +301,12 @@ Pipeline_folder_Home='{path to the folder with all tasks}/pipeline/';
 fea_foldername_Home='Features';
 target_label_Home = pd.read_excel('{path to the list of all tasks}/Documents for Home/TargetLabeling_Home.xlsx');
 target_info_Home=target_label_Home.iloc[2:,0:6] #task,b/o,sub,start,end, vset # all tasks
-target_list_Home=target_info_Home.values.tolist()
+target_list_Home=target_info_Home.values.tolist();
 
 Participant_info=pd.read_excel('{path to participant info}/participants_info.xlsx',sheet_name='demographic');
 subj_num=Participant_info.iloc[:,0];
 Aff_Hand_info=Participant_info.iloc[:,3]; #sub,affted hand (R=1;L=0)
-Aff_Hand_list=Aff_Hand_info.values.tolist()
+Aff_Hand_list=Aff_Hand_info.values.tolist();
 PCA_location='{path to a pretrained PCA model}/PCA_Model_Stroke_sub1-9_Interaction.joblib'; # if no PCA: location=[]
 label_col=[0,1];saveFilename='Interaction_';
 feaName='OPT_HOGpca_Colour';len_fea=range(0,122);
