@@ -295,7 +295,6 @@ def Pool_hands(Fea_subj_R,Fea_subj_L,GT_subj_R,GT_subj_L,Participant_info):
 
     return BySUBJ_Fea_TrainIndex_TestIndex, BySUBJ_GT_TrainIndex_TestIndex, aff_frames_num_BySubj, unaff_frames_num_BySubj
   
-########## Home ############
 GT_labeling_folder_Home='{path to annotation folder}/Documents for Home/Labeled xlsx/';
 Pipeline_folder_Home='{path to the folder with all tasks}/pipeline/';
 fea_foldername_Home='Features';
@@ -316,7 +315,7 @@ rf_cl = RandomForestClassifier(n_estimators=150) # n_estimators=150 trees.
 saveRoot='{path to store results}/Interaction/LOSOCV/Home/';
 save_model_filename=saveRoot+'Model_Home_Stroke_Sub1-26_Interaction.joblib'
 
-#### Home #####
+
 Fea_subj_R_home,Fea_subj_L_home,GT_subj_R_home,GT_subj_L_home,subj,Predictions_noBBX_R_home,Predictions_noBBX_L_home =Orgniza_Data(GT_labeling_folder_Home,Pipeline_folder_Home,fea_foldername_Home,target_list_Home,PCA_location,len_fea,hand_threshold)
 BySUBJ_Fea_TrainIndex_TestIndex_Home, BySUBJ_GT_TrainIndex_TestIndex_Home, aff_frames_num_BySubj_Home, unaff_frames_num_BySubj_Home = Pool_hands(Fea_subj_R_home,Fea_subj_L_home,GT_subj_R_home,GT_subj_L_home,Participant_info);
 
