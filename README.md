@@ -18,7 +18,7 @@ Check the pipeline folder path is correct in [FeatureExtraction.py](https://gith
 python FeatureExtraction.py
 ```
 ## 4. Run Leave-One-Subject-Out-Cross-Validation
-Download the PCA model [here]().
+Download the PCA model [here]().  
 For hand-object interaction detection, check the folder paths in [line 298-316](https://github.com/mft2023/Random-Forest-Classifier/blob/ec97f33b6e85b64076c96f30b744f1ad7df7df60/LOSOCV_Interaction.py#L298C1-L298C1) are correct and run LOSOCV_Interaction.py.
 ```
 python LOSOCV_Interaction.py
