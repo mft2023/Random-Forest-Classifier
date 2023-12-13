@@ -233,10 +233,10 @@ for k in range(0,len(folder_list)):
     print(folder_list[k])
     RGBfolder=folder_Path+folder_list[k]+'/RGB405p2/';
     Maskfolder=folder_Path+folder_list[k]+'/Mask/';
-    BBXfolder=folder_Path+folder_list[k]+'/Shan_bbx/';
+    BBXfolder=folder_Path+folder_list[k]+'/bbx/';
     
     if os.path.exists(BBXfolder):
-        saveFeatPath=folder_Path+folder_list[k]+'/Feature_N10_ShanBBX/';
+        saveFeatPath=folder_Path+folder_list[k]+'/Features/';
         filename_fea=[];
         img_width=720;
         img_height=405;
