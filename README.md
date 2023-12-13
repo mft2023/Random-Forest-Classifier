@@ -19,5 +19,12 @@ python FeatureExtraction.py
 ```
 
 ## 4. Run Leave-One-Subject-Out-Cross-Validation
-For hand-object interaction detection, 
+For hand-object interaction detection, check the folder path in [line 298-316](https://github.com/mft2023/Random-Forest-Classifier/blob/ec97f33b6e85b64076c96f30b744f1ad7df7df60/LOSOCV_Interaction.py#L298C1-L298C1) are correct and run LOSOCV_Interaction.py.
+```
+python LOSOCV_Interaction.py
+```
+For hand role classification, check each folder path in [line 312-337](https://github.com/mft2023/Random-Forest-Classifier/blob/ec97f33b6e85b64076c96f30b744f1ad7df7df60/LOSOCV_HandRole_weighted.py#L312C1-L312C1) is correct and run LOSOCV_HandRole_weighted.py.
+```
+python LOSOCV_HandRole_weighted.py
+```
 
