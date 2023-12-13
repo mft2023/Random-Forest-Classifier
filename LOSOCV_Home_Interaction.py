@@ -311,7 +311,7 @@ label_col=[0,1];saveFilename='Interaction_';
 feaName='OPT_HOGpca_Colour';len_fea=range(0,122);
 hand_threshold=0;# 0: take every bbx
 
-rf_cl = RandomForestClassifier(n_estimators=150) # n_estimators=150 trees.
+rf_cl = RandomForestClassifier(n_estimators=150);
 saveRoot='{path to store results}/Interaction/LOSOCV/Home/';
 save_model_filename=saveRoot+'Model_Home_Stroke_Sub1-26_Interaction.joblib'
 
@@ -330,11 +330,6 @@ print("\nHome: Total Number of Interaction Instance: "+str(num_interaction+num_n
 print("Home: Number of Interaction Instance: "+str(num_interaction/(num_interaction+num_non_interaction)*100)+" %")
 print("Home: Number of Non-Interaction Instance: "+str(num_non_interaction/(num_interaction+num_non_interaction)*100)+" %")
 
-################ Leave 1 Subj Out Cross Validation ##############################
-
-#BySUBJ still stored the original data, the data fed in random forest is replacing nan and inf with 0
-
-###################
 BySUBJ_Fea_TrainIndex_TestIndex_post=[]
 BySUBJ_overall_GT_predict=[];BySUBJ_aff_GT_predict=[];BySUBJ_unaff_GT_predict=[];
 BySUBJ_overall_precision_recall_F1=[];BySUBJ_aff_precision_recall_F1=[];BySUBJ_unaff_precision_recall_F1=[];

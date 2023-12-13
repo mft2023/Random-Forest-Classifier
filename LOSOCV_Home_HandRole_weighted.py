@@ -330,7 +330,6 @@ Aff_Hand_info=Participant_info.iloc[:,3]; #sub,affted hand (R=1;L=0)
 Aff_Hand_list=Aff_Hand_info.values.tolist();
 PCA_location='{path to a pretrained PCA model}/PCA_Model_Stroke_sub1-9_Interaction.joblib'; # if no PCA: location=[]
 label_col=[4,5];saveFilename='HandRole_manip_';
-#flip='Flip_GT_predictions';######### flip GT and predictions
 feaName='OPT_HOGpca_Colour_HandSize';len_fea=range(0,132);
 hand_threshold=0;# 0: take every bbx
 rf_cl = RandomForestClassifier(n_estimators=150,class_weight={0:1,1:20}) 
