@@ -28,3 +28,13 @@ For hand role classification, check each folder path in [line 312-337](https://g
 python LOSOCV_HandRole_weighted.py
 ```
 
+# Cite
+If you find this repository useful in your research, please consider citing:
+```
+@article{
+    Author = {Meng-Fen Tsai,Rosalie H. Wang, and Zariffa, José},
+    Title = {Recognizing hand use and hand role at home after stroke from egocentric video},
+    Journal = {PLOS Digital Health 2.10: e0000361},
+    Year = {2023}
+}
+```
